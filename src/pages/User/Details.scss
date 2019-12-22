@@ -1,0 +1,11 @@
+.details{
+  @extend .content-light;
+  padding:20px;
+  font-size: 11px;
+  line-height: 20px;
+  .label{
+    display: inline-block;
+    width:80px;
+    text-align: right;
+  }
+}

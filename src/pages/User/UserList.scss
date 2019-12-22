@@ -1,0 +1,99 @@
+.user-list {
+  header {
+    padding: 5px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 80px;
+    }
+
+    .avatar {
+      width: 30px;
+      border-radius: 50%;
+    }
+  }
+
+  .active {
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .tab-list {
+    font-size: 11px;
+    padding: 10px 16px;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+
+  .user-card {
+    padding: 0 16px;
+
+    li {
+      border-radius: 6px;
+      border: 1px solid $borderGray;
+      box-shadow: $oeShadow;
+      margin-bottom: 16px;
+
+      img {
+        width: 100%;
+        border-radius: 6px 6px 0 0;
+      }
+
+      .user-info {
+        padding: 8px 12px;
+      }
+
+      .user-name {
+        font-size: 14px;
+        font-weight: bold;
+
+        span {
+          vertical-align: middle;
+        }
+
+        .icon-shield {
+          margin: 0 5px;
+        }
+      }
+
+      .user-desc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.ant-dropdown-menu,
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+  background: #656565;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.ant-dropdown-menu-item:hover,
+.ant-dropdown-menu-submenu-title:hover {
+  background: #656565;
+}
+
+.ant-dropdown,
+.ant-dropdown {
+  margin-left: -10px;
+
+  &::before {
+    width: 0;
+    height: 0;
+    border: 6px solid;
+    opacity: 1;
+    border-color: transparent transparent #656565;
+    top: -11px;
+    left: 4px;
+  }
+}

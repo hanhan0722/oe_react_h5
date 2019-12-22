@@ -1,0 +1,25 @@
+.oe-footer{
+  line-height: 15px;
+  .content-top{
+    padding:12px;
+    background: #5D5D5D;
+    color:#B7B7B7;
+    border-radius: 20px 20px 0 0;
+    img{
+      width:60px;
+      margin-right: 12px;
+      vertical-align: middle;
+      &+div{
+        width:calc(100% - 72px);
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .content-bottom{
+    background: #484747;
+    color: #D0D0D0;
+    text-align: center;
+    padding: 10px 0;
+  }
+}

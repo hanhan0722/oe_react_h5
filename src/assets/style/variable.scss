@@ -1,0 +1,45 @@
+$oePink: #DD3868;
+$oeBlue: #5B86E7;
+$borderGray: #E8E8E8;
+$oeShadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+
+@mixin grad-bottom($color1, $color2) {
+  background: -webkit-linear-gradient(top, $color1, $color2);
+  background: -o-linear-gradient(bottom, $color1, $color2);
+  background: -moz-linear-gradient(bottom, $color1, $color2);
+  background: linear-gradient(to bottom, $color1, $color2);
+}
+
+@mixin grad-right($color1, $color2) {
+  background: -webkit-linear-gradient(left, $color1, $color2);
+  background: -o-linear-gradient(right, $color1, $color2);
+  background: -moz-linear-gradient(right, $color1, $color2);
+  background: linear-gradient(to right, $color1, $color2);
+}
+
+@mixin btn {
+  height: 30px;
+  padding: 0 20px;
+  line-height: 30px;
+  cursor: pointer;
+  color: #404040;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 11px;
+}
+
+@mixin btn-grad($color1, $color2) {
+  @include btn;
+  @include grad-right($color1, $color2);
+  color: #fff;
+}
+
+@mixin icon($w, $h, $bgImg) {
+  display: inline-block;
+  width: $w;
+  height: $h;
+  background-image: $bgImg;
+  vertical-align: middle;
+  background-size: 100% 100%;
+}
+

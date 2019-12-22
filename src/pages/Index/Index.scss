@@ -1,0 +1,96 @@
+.index {
+  .title-main {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .title-sub {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .module {
+    min-height: 100vh;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+
+  .module1 {
+    @include grad-bottom(#5E46AA, #4D115B);
+    position: relative;
+    color: #fff;
+    text-align: center;
+
+    .image-logo {
+      width: 80px;
+      position: absolute;
+      left: 10px;
+      top: 20px;
+    }
+    .title-main{
+      font-weight: normal;
+    }
+    .title-sub {
+      padding-top: 15px;
+    }
+
+    .module1-desc {
+      font-size: 10px;
+      margin-top: 10px;
+    }
+
+    button {
+      margin: 20px auto;
+      font-size: 13px;
+      width:80%;
+
+      &+p {
+        span {
+          display: inline-block;
+          width: 50%;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  .module2,
+  .module3,
+  .module4 {
+    p {
+      padding: 0 30px;
+    }
+
+    img:not(.footer-logo) {
+      margin-top: 30px;
+    }
+  }
+
+  .module2,
+  .module3 {
+    display: flex;
+    align-items: center;
+  }
+
+  .module3 {
+    @include grad-bottom(#E9015D, #F08675);
+    color: #fff;
+  }
+
+  .module4 {
+    position: relative;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+  .ant-select{
+    margin:0 15px 15px 0;
+  }
+  .ant-select-selection--single,.ant-select-selection__rendered{
+    height:24px;
+    line-height: 24px;
+    border-radius: 12px;
+  }
+}

@@ -1,0 +1,73 @@
+.register {
+  padding: 20px 40px;
+
+  .register-title {
+    color: $oePink;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 30px;
+  }
+
+  .work-place,
+  .birth-date {
+    border: 1px solid #d9d9d9;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+
+    .placeholder {
+      color: rgba(183, 183, 183, 1);
+    }
+  }
+
+  .ant-form-explain.error {
+    display: block;
+    color: #f5222d;
+    padding: 0.053333rem 0 0 0.053333rem;
+    height:0;
+    min-height: 0;
+  }
+
+  input[type='date'] {
+    line-height: 200%;
+
+    &:before {
+      content: attr(placeholder);
+      color: rgba(191, 191, 191, 1);
+    }
+  }
+
+  .image-gender {
+    margin: 10px 0 20px;
+
+    &>div {
+      border: 1px solid $borderGray;
+      display: inline-block;
+      width: 80px;
+      padding: 5px;
+      border-radius: 20px;
+      text-align: center;
+      font-size: 11px;
+
+      img {
+        width: 15px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+
+      span {
+        vertical-align: middle;
+      }
+
+      &.gender-active {
+        background: $oePink;
+        color: #fff;
+      }
+
+      &:last-child {
+        float: right;
+      }
+    }
+  }
+}

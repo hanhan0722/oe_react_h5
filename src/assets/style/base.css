@@ -1,0 +1,111 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  color: #3E3A39;
+  font-family: PingFang-SC-Medium, PingFangSC, "Microsoft Yahei",monospace,
+    "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Helvetica, Arial, Tahoma,
+    Heiti, SimSun, sans-serif !important;
+  font-size: 12px;
+  background: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(144, 147, 153, 0.3);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+*,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+select {
+  outline: none;
+}
+
+option {
+  border: none;
+  outline: none;
+}
+
+input[type="button"],
+button {
+  display: block;
+  border: none;
+  outline: 0;
+  background: #fff;
+}
+
+a,
+a:visited,
+a:link {
+  color: #0099ff !important;
+}
+
+a:hover {
+  color: #0099ff;
+}
+
+.lf {
+  float: left;
+}
+
+.rt {
+  float: right;
+}
+
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear {
+  zoom: 1;
+}
+
+.ant-input,
+.ant-select-selection--single {
+  height: 30px;
+  border-radius: 4px;
+}
+
+.ant-select-selection__rendered {
+  line-height: 30px;
+}
+.has-error .ant-form-explain, .has-error .ant-form-split{
+  padding:4px 0 0 4px;
+}

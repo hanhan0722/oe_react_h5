@@ -1,0 +1,71 @@
+
+.btn-default {
+  @include btn;
+  border: 1px solid $borderGray;
+}
+
+.btn-primary {
+  @include btn;
+  background: $oePink;
+  color: #fff;
+}
+
+.btn-disabled {
+  @include btn;
+  background: #efefef;
+  color: #a1a1a1;
+}
+
+.btn-grad-pink {
+  @include btn-grad(#F08775, $oePink);
+  width:100%;
+  margin:0 auto;
+}
+
+.shadow-fixed {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+  &>div {
+    width: 80%;
+    margin: 50vh 0 0 50vw;
+    transform: translate(-50%, -50%);
+
+    .modal-close {
+      width: 20px;
+    }
+
+    .line {
+      background: #fff;
+      width: 1px;
+      height: 20px;
+      margin: -5px 0 0 10px;
+    }
+
+    .modal {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+    }
+  }
+}
+
+.main-title {
+  font-size: 10px;
+  font-weight: bold;
+}
+.prompt-error{
+  color:#f5222d;
+}
+.font-primary{
+  color:$oePink;
+}
+.content-light{
+  color:#919191;
+  line-height: 15px;
+}

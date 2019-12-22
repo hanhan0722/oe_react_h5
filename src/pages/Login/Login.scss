@@ -1,0 +1,113 @@
+.login {
+  text-align: center;
+  padding: 20px 40px;
+
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #13CE66;
+    border-color: #13CE66;
+  }
+
+  .ant-checkbox-checked::after {
+    border-color: #13CE66;
+  }
+
+  .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+  .ant-checkbox:hover .ant-checkbox-inner,
+  .ant-checkbox-input:focus+.ant-checkbox-inner {
+    border-color: #13CE66;
+  }
+
+  .ant-form-explain {
+    margin-top: 3px;
+  }
+
+  a,
+  a:visited,
+  a:link {
+    color: $oePink !important;
+  }
+
+  .login-title {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+
+  .form-phone {
+    width: 70%;
+  }
+
+  .country-code {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-right: none;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .phone-number {
+    color: $oePink;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    word-break: break-all;
+  }
+
+  .btn-default {
+    margin: 20px auto;
+    color: #919191;
+    font-size: 10px;
+    line-height: 30px;
+    i {
+      margin-right: 2px;
+      font-size: 12px;
+    }
+  }
+
+  .login-code {
+    position: relative;
+
+    .square-list {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        border: 2px solid $borderGray;
+        border-radius: 6px;
+        line-height: 35px;
+        font-size: 14px;
+        color: $oePink;
+      }
+    }
+
+    #code {
+      width: 100%;
+      color: transparent;
+      caret-color: transparent;
+      border: none;
+      position: absolute;
+      height: 35px;
+      line-height: 35px;
+      padding: 0 20px;
+      left: 0;
+      top: 0;
+      background: transparent;
+      letter-spacing: 45px;
+      font-size: 14px;
+    }
+  }
+
+  .btn-grad-pink {
+    margin: 30px auto 15px;
+  }
+
+  .resend-code {
+    color: $oePink;
+    font-size: 10px;
+  }
+}

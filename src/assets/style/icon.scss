@@ -1,0 +1,17 @@
+$imgPath:'../../assets/img/';
+
+.icon-shield {
+  @include icon(12px, 16px, url(#{$imgPath}user/shield.png))
+}
+
+.icon-vip {
+  @include icon(20px, 10px, url(#{$imgPath}user/vip.png))
+}
+
+.icon-heart {
+  @include icon(50px, 50px, url(#{$imgPath}user/heart.png))
+}
+
+.icon-chat {
+  @include icon(50px, 50px, url(#{$imgPath}user/chat.png))
+}
