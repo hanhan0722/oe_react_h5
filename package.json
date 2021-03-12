@@ -18,7 +18,7 @@
     "react": "^16.8.6",
     "react-addons-pure-render-mixin": "^15.6.2",
     "react-app-polyfill": "^1.0.1",
-    "react-dev-utils": "^9.0.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.8.6",
     "react-intl-universal": "^2.1.1",
     "react-placeholder": "^3.0.2",
